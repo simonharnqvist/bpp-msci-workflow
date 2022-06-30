@@ -59,7 +59,7 @@ define a as infantum, donovani
 bidirection infantum a,donovani a as i j phi=0.5,0.5
 ```
 
-For more details on how to set up the `msci.txt` file, please see [https://github.com/bpp/bpp/releases/download/v4.4.1/msci-create.pdf]
+For more details on how to set up the `msci.txt` file, please see https://github.com/bpp/bpp/releases/download/v4.4.1/msci-create.pdf
 
 #### Email and account ####
 These are passed to Slurm. If you are not on a Slurm based system, you'll have to edit the scripts to make it work. Sorry.
