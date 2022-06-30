@@ -7,7 +7,7 @@ BP&P is a software for demographic analyses enabling studies of (among many othe
 It should be emphasised that this project is completely unaffiliated with BP&P and its development team. 
 
 ## Prerequisites ##
-This workflow requires Snakemake as well as mamba. Please see their respective websites to install them. In spite of what mamba maintainers warn, I've found that mamba can be installed safely in a conda environment other than base.
+This workflow requires [Snakemake](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html) as well as [mamba](https://github.com/mamba-org/mamba). Please see their respective websites to install them. In spite of what mamba maintainers warn, I've found that mamba can be installed safely in a conda environment other than base, which is helpful if you are on a managed system.
 
 ## 1. Set parameters in config.yaml ##
 Config.yaml is the main method of controlling the pipeline. It takes the following parameters:
