@@ -6,6 +6,19 @@ BP&P is a software for demographic analyses enabling studies of (among many othe
 
 It should be emphasised that this project is completely unaffiliated with BP&P and its development team. 
 
+**What bpp-msci-workflow does:**
+1. Filters your VCF to include only the samples present in Imap
+2. Prunes on LD with R^2 = 0.5
+3. Splits the genome into coding and non-coding regions
+4. Randomly selects regions of length 500-1000 bp
+5. Retrieves the sequences for each region and sample, aligns them, trims them, and generates a single interleaved PHYLIP for each dataset (coding/noncoding)
+6. Installs BP&P 4.4.1 in the working directory
+7. Constructs a Newick tree accepted by BP&P from the `msci.txt` file
+8. Generates BP&P control files
+9. Generates Slurm-compatible scripts to run BP&P
+
+If you are planning to use it on a system without Slurm, you can easily change the target files in `Snakefile` to just produce the PHYLIP and the control files, and make your own bash scripts to run BP&P with them.
+
 ## Prerequisites ##
 This workflow requires [Snakemake](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html) as well as [mamba](https://github.com/mamba-org/mamba). Please see their respective websites to install them. In spite of what mamba maintainers warn, I've found that mamba can be installed safely in a conda environment other than base, which is helpful if you are on a managed system.
 
