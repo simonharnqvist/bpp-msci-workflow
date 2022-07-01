@@ -1,0 +1,15 @@
+imap: "config_files/Imap"
+vcf: "VCF"
+fasta: "config_files/infantum.fa"
+gff: "config_files/TriTrypDB-54_LinfantumJPCM5.gff"
+regions: "all"
+number_of_loci: 1000
+ctl_template: "config_files/template.ctl"
+theta_beta: 0.0005
+tau_beta: 0.02
+mcmc_samples: 1000
+number_of_repeats: 3
+msci: "config_files/msci.txt"
+email: "EMAIL"
+account: "ACCOUNT"
+
