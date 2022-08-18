@@ -2,7 +2,7 @@
 A Snakemake workflow for the MSCi framework in BP&amp;P
 
 ## Description ##
-BP&P is a software for demographic analyses enabling studies of (among many other things) introgression. While highly useful, it can be challening to use. The hope is that this workflow will simplify the use of BP&P for introgression analyses.
+BP&P is a software for demographic analyses enabling studies of (among many other things) introgression. While useful, it can be challenging to use. The hope is that this workflow will simplify the use of BP&P for introgression analyses.
 
 It should be emphasised that this project is completely unaffiliated with BP&P and its development team. 
 
@@ -18,6 +18,8 @@ It should be emphasised that this project is completely unaffiliated with BP&P a
 9. Generates Slurm-compatible scripts to run BP&P
 
 If you are planning to use it on a system without Slurm, you can easily change the target files in `Snakefile` to just produce the PHYLIP and the control files, and make your own bash scripts to run BP&P with them.
+
+The pipeline is not actively maintained, but if you do find any bugs, please report them by opening an 'issue' on GitHub. 
 
 ## Dependencies ##
 This workflow requires [Snakemake](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html) as well as [mamba](https://github.com/mamba-org/mamba). Please see their respective websites to install them. In spite of what mamba maintainers warn, I've found that mamba can be installed safely in a conda environment other than base, which is helpful if you are on a managed system.
