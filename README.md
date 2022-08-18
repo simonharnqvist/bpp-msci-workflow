@@ -16,6 +16,7 @@ It should be emphasised that this project is completely unaffiliated with BP&P a
 7. Constructs a Newick tree accepted by BP&P from the `msci.txt` file
 8. Generates BP&P control files
 9. Generates Slurm-compatible scripts to run BP&P
+10. Submits these scripts to the scheduler, generating the final output
 
 If you are planning to use it on a system without Slurm, you can easily change the target files in `Snakefile` to just produce the PHYLIP and the control files, and make your own bash scripts to run BP&P with them.
 
