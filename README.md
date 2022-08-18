@@ -86,6 +86,9 @@ These are passed to Slurm. If you are not on a Slurm based system, you'll have t
 First, create the `snakemake` mamba environment by running: </br>
 `mamba env create -f env.yaml`
 
+Then activate the environment: </br>
+`mamba activate snakemake`
+
 Then run the pipeline with: </br>
 `snakemake -c1 --use-conda`
 
