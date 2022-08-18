@@ -41,15 +41,11 @@ rule filter_vcf:
                 "temp/renamed.vcf.gz"
         output:
                 "temp/filtered.vcf"
-        run:
-                if str(config["regions"]) == "all":
-                        shell("bcftools view --samples-file {input[0]} {input[1]} --min-alleles 2 --max-alleles 2 --force-samples -Oz > {output}")
-                else:
-                        #regions_string = ",".join(config["regions"])
-                        #print("Using regions:" + regions_string)
-                        print("This feature does not work yet")
-                        #shell("bcftools view --samples-file {input[0]} {input[1]} --regions '{regions_string}' --min-alleles 2 --max-alleles 2 --force-samples -Oz > {output}")
-
+        shell:
+                """
+                bcftools view --samples-file {input[0]} {input[1]} --min-alleles 2 --max-alleles 2 --force-samples -Oz > {output}
+                """
+                
 rule prune_vcf_on_LD:
         input:
                 "temp/filtered.vcf"
