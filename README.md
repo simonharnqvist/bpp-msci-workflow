@@ -82,7 +82,11 @@ For more details on how to set up the `msci.txt` file, please see https://github
 These are passed to Slurm. If you are not on a Slurm based system, you'll have to edit the scripts to make it work. 
 
 ## 2. Run pipeline ##
-Once everything is set up, you can run the pipeline with: </br>
+
+First, create the `snakemake` mamba environment by running: </br>
+`mamba env create -f env.yaml`
+
+Then run the pipeline with: </br>
 `snakemake -c1 --use-conda`
 
 ## 3. Analyse results ##
