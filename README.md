@@ -35,7 +35,6 @@ imap: "config_files/Imap"
 vcf: "config_files/file.vcf
 fasta: "config_files/reference.fa"
 gff: "config_files/reference.gff"
-regions: "all" # please ignore - this feature isn't working yet
 number_of_loci: 1000
 ctl_template: "config_files/template.ctl"
 theta_beta: 0.0005
@@ -65,8 +64,6 @@ BP&P settings are controlled using a control file. The pipeline generates approp
 #### Theta and tau beta values ####
 This sets the beta value for the theta and tau priors - alpha is set as 3 by default (but you can change this in template.ctl). 
 
-#### MCMC samples ####
-
 #### Number of repeats ####
 This sets how many repeats you want per analysis. Each repeat is performed with a new seed but with the same dataset.
 
@@ -81,14 +78,14 @@ bidirection infantum a,donovani a as i j phi=0.5,0.5
 For more details on how to set up the `msci.txt` file, please see https://github.com/bpp/bpp/releases/download/v4.4.1/msci-create.pdf
 
 #### Email and account ####
-These are passed to Slurm. If you are not on a Slurm based system, you'll have to edit the scripts to make it work. Sorry.
+These are passed to Slurm. If you are not on a Slurm based system, you'll have to edit the scripts to make it work. 
 
 ## 2. Run pipeline ##
 Once everything is set up, you can run the pipeline with: </br>
 `snakemake -c1 --use-conda`
 
 ## 3. Analyse results ##
-BP&P will output files called things like coding_1_out.txt in the working directory.
+BP&P will output files called things like coding_1_out.txt in the working directory. For help with interpreting the output, see the BP&P manual.
 
 
 
