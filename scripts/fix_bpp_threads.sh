@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# from https://github.com/bpp/bpp/issues/155
+# By Mike Renfo; stolen from from https://github.com/bpp/bpp/issues/155
 _fix_bpp_threads() {
 	#1 Control file
   	BPP_CPUSET=$(sed 's/,/ /g' /sys/fs/cgroup/cpuset/slurm/uid_$(id -u)/job_${SLURM_JOBID}/cpuset.cpus)
