@@ -24,6 +24,8 @@ This workflow requires [Snakemake](https://snakemake.readthedocs.io/en/stable/ge
 
 There is no need to install anything else; Snakemake will automatically set up a mamba environment as specified in `env.yaml`.
 
+At present, this workflow only works 'out of the box' on systems with a Slurm scheduler. To run it on other systems, you'll have to edit `run_bpp.sh`.
+
 ## 1. Set parameters in config.yaml ##
 Config.yaml is the main method of controlling the pipeline. It takes the following parameters:
 ```
