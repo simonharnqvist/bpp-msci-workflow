@@ -3,7 +3,7 @@ A Snakemake workflow for the MSCi framework in BP&amp;P
 
 ## Description ##
 
-** Please note that this pipeline is not maintained, and that there is at least one known bug. Please feel free to steal the code to set up your own pipeline, but it won't run out of the box at this time. **
+*Please note that this pipeline is not maintained, and that there is at least one known bug. Please feel free to steal the code to set up your own pipeline, but it won't run out of the box at this time.*
 
 BP&P is a software for demographic analyses enabling studies of (among many other things) introgression. While useful, it can be challenging to use. The hope is that this workflow will simplify the use of BP&P for introgression analyses.
 
